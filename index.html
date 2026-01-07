@@ -8,6 +8,8 @@ layout: null
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
  <link rel="stylesheet" href="https://adabunalima5.github.io/file/css/01/01.css"/> 
+ <meta name="yandex-verification" content="0c8f01264db7adb2" />
+ <meta name="yandex-verification" content="4323600e2fe4b08d" />
   
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
 <link rel="shortcut icon" href="/favicon.ico" />
@@ -20,7 +22,10 @@ layout: null
 	
 {% include head.html %}	
 
+<meta name="yandex-verification" content="4323600e2fe4b08d" />
 
+	<meta name="yandex-verification" content="0c8f01264db7adb2" />
+	
 <!-- awal Seo Otomatis khusus untuk Homepage -->
 <script>
 (function () {
@@ -330,7 +335,7 @@ function getCategoryCandidates(hostname) {
 const urlParams = new URLSearchParams(window.location.search);
 const initialPage = parseInt(urlParams.get('page')) || 1;
 const { sub: subCategory, domain: domainCategory } = getCategoryCandidates(window.location.hostname);      
-const POSTS_PER_PAGE = 6;      
+const POSTS_PER_PAGE = 24;      
 let currentPage = initialPage;      
 let filteredPosts = [];      
 
@@ -367,7 +372,7 @@ function renderPosts() {
   container.innerHTML = '';      
   pagination.innerHTML = '';      
 
-  const start = (currentPage - 1) * POSTS_PER_PAGE;      
+  const start = (currentPage - 2) * POSTS_PER_PAGE;      
   const end = start + POSTS_PER_PAGE;      
   const pagePosts = filteredPosts.slice(start, end);      
 
